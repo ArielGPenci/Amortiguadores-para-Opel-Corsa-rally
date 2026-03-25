@@ -29,3 +29,28 @@ El análisis, hecho totalmente en R (Rstudio), consta de cuatro momentos:
 A) Velocidades de compresión y rebote de cada amortiguador.
 B) Visualización de valores maximos y mínimos tanto de compresión como de rebote.
 C) Transferencia de cargas: balanceo longitudinal y balancelo lateral.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+1) LECTURA DEL DATASET
+   
+El mismo combina valores numéricos y de texto. Los datos fueron examinados previamente, para asegurar su integridad. No se encontron datos faltantes ni erróneos. Los datos se obtuvieron por medio de sensores especiales conectados en cada rueda:
+
+   <img width="1024" height="1536" alt="Sensor de viaje de suspensión en detalle" src="https://github.com/user-attachments/assets/3ae5fb50-2cc8-43fb-9eed-ea9e75fc81ed" />
+   <img width="1024" height="1365" alt="Detalle del Opel Corsa rally" src="https://github.com/user-attachments/assets/7ce246ab-9884-4d23-ba34-5ef7547cf99f" />
+
+3) EXPLORACIÓN DE DATOS
+   
+Para tener una primera aproxomación a los datos, se ejecutaron algunos comandos de R:
+
+. glimpse
+
+. str
+
+. summary (info estadística del dataset)
+
+. is.na
+
+5) ANÁLISIS
+
+       
