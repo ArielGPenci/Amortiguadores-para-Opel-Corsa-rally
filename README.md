@@ -21,3 +21,11 @@ A modo de convención, se asume que los lados derecho e izquierdo son los siguie
 
     
 <img width="1536" height="1024" alt="Vista superior del auto de rally" src="https://github.com/user-attachments/assets/a00f1a98-f436-4f0d-a11e-1f8000214f09" />
+
+El análisis, hecho totalmente en R (Rstudio), consta de cuatro momentos:
+1) Lectura del dataset.
+2) Exploración de datos.
+3) Análisis de tres puntos:
+   A) Velocidades de compresión y rebote de cada amortiguador.
+   B) Visualización de valores maximos y mínimos tanto de compresión como de rebote.
+   C) Transferencia de cargas: balanceo longitudinal y balancelo lateral.
