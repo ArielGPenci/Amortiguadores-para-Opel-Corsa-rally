@@ -16,4 +16,8 @@ El dataset es un archivo .xlsx que consta de 10.000 registros y 10 variables. Es
 10) Momento del amortiguador (accion_amortiguador)*
     
 *Si es positivo, está en la fase de compresión, si es negativo de rebote.
+
+A modo de convención, se asume que los lados derecho e izquierdo son los siguientes:
+
     
+<img width="1536" height="1024" alt="Vista superior del auto de rally" src="https://github.com/user-attachments/assets/a00f1a98-f436-4f0d-a11e-1f8000214f09" />
