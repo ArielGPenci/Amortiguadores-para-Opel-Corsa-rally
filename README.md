@@ -26,6 +26,6 @@ El análisis, hecho totalmente en R (Rstudio), consta de cuatro momentos:
 1) Lectura del dataset.
 2) Exploración de datos.
 3) Análisis de tres puntos:
-   A) Velocidades de compresión y rebote de cada amortiguador.
-   B) Visualización de valores maximos y mínimos tanto de compresión como de rebote.
-   C) Transferencia de cargas: balanceo longitudinal y balancelo lateral.
+A) Velocidades de compresión y rebote de cada amortiguador.
+B) Visualización de valores maximos y mínimos tanto de compresión como de rebote.
+C) Transferencia de cargas: balanceo longitudinal y balancelo lateral.
