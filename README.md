@@ -53,4 +53,52 @@ Para tener una primera aproxomación a los datos, se ejecutaron algunos comandos
 
 3) ANÁLISIS
 
+A) Velocidades de compresión y rebote de cada amortiguador
+
+Aunque la suspensión se mueve apenas unos milímetros, lo hace con mucha energía y rapidez. Se mide en metros por segundo (m/s). Los siguentes histogramas muestran el desempeño de los cuatro amortiguadores del vehículo, en la fase de compresión (velocidad positiva, ya que el amortiguador "sube"):
+
+<img width="723" height="439" alt="image" src="https://github.com/user-attachments/assets/664788f1-4344-48f4-9cea-62fccd7b135e" />
+
+<img width="723" height="439" alt="image" src="https://github.com/user-attachments/assets/81838ccf-1724-4d35-9445-34f79c696b35" />
+
+<img width="723" height="439" alt="image" src="https://github.com/user-attachments/assets/735e2799-d65f-4b45-9c52-24bcdf17a229" />
+
+<img width="723" height="439" alt="image" src="https://github.com/user-attachments/assets/a5b39d86-f622-4023-a953-ac248760d9b0" />
+
+
+A continuación, las velocidades de rebote (velocidad negativa, el amortiguador "baja):
+
+<img width="723" height="439" alt="image" src="https://github.com/user-attachments/assets/bb45e255-64c7-4b39-9632-37975f53d23f" />
+
+<img width="723" height="439" alt="image" src="https://github.com/user-attachments/assets/c9417693-66d7-47d2-9183-6f3986136670" />
+
+<img width="723" height="439" alt="image" src="https://github.com/user-attachments/assets/2a89d265-d883-4079-a8cd-afad4da725fc" />
+
+<img width="723" height="439" alt="image" src="https://github.com/user-attachments/assets/988028eb-1bb5-410a-9207-c2ef5fdba815" />
+
+Los cuatro amortiguadores tienen una velocidad de compresión y rebote relativamente bajsa. Esto quiere decir que los vástagos de los amortiguadores se mueven poco, por lo que los cuatro muelles de suspensión están bastante rígidos.
+
+---------------------
+
+B) Visualización de valores maximos y mínimos de compresión. Rebote.
+
+Los vástagos de los 4 amortiguadores poseen un recorrido de 200 milímetros. Así, se considera una comoresión como máxima cuando el valor oscila entre los 115 y 200 mm. Al margen de saber cuantas veces llega a valores máximos de compresión, es interesante saber qué porcentaje del tiempo los amortiguadores estuvieron "sufriendo" en compresiones elevadas. La siguiente tabla muestra la proporción del tiempo en que los amortiguadores llegan (o casi) al máximo:
+
+<img width="498" height="298" alt="image" src="https://github.com/user-attachments/assets/1b787056-b5a5-4d47-8945-168c589496e3" />
+
+
+Los amortiguadores del eje trasero comprimieron casi al máximo durante un 44% del tiempo que duró el muestreo, lo que indica que el eje trasero es mas blando que el delantero.
+Por otro lado, se considera valores maximos de de rebote los comprendidos entre 10 mm y 0 mm. En este muestreo, los amortiguadores traseros no llegaron a ese rango de valores.
+
+----------------------------------------
+
+C) Transferencia de cargas: balanceo longitudinal y balancelo lateral.
+
+
+
+
+
+
+
+
        
