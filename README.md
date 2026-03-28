@@ -92,7 +92,22 @@ Por otro lado, se considera valores maximos de de rebote los comprendidos entre 
 
 ----------------------------------------
 
-C) Transferencia de cargas: balanceo longitudinal y balancelo lateral.
+C) Transferencia de cargas: alancelo lateral y balanceo longitudinal.
+
+El balanceo lateral ocurre principalmente en las curvas. La fuerza centrífuga hace que el peso se desplace hacia las ruedas exteriores. Es decir, qué tanto se "acuesta" el chasis sobre las suspensiones exteriores al doblar.
+A continuación se muestran los valores máximos para los amortiguadores drechos e izquierdos:
+<img width="498" height="133" alt="image" src="https://github.com/user-attachments/assets/4cf2707f-aa84-4463-a021-4ea8f210eb54" />
+
+La diferencia es de 1,3 mm, lo que indica que no existe un balanceo mayor de un lado que del otro (amortiguadores en buen estado y/o bien regulados).
+
+Por otro lado, el balanceo longitudinal sucede al acelerar o al frenar. En aceleración, el eje delantero tiende a subir y el trasero a bajar. En frenadas, al revés.
+En la siguente tabla se muestran las pociciones máximas de los amortiguadores del eje delantero y trasero:
+
+<img width="318" height="135" alt="image" src="https://github.com/user-attachments/assets/ceb40c04-e1fb-4d59-8530-2ab1a519d144" />
+
+En este caso, la diferencia es de 8mm: el eje delantero tiende a mantenerse mas bajo que el trasero. Esto quiere decir que al frenar, el eje delantero demandará mas potencia de frenado. Pero como el centtro de gravedad está volcado hacia adelante las ruedas motrices del tendrán  mejor contacto con el suelo al arrancar o salir de curvas lentas (reduciendo el patinamiento).
+
+
 
 
 
