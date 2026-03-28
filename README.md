@@ -40,9 +40,8 @@ El mismo combina valores numéricos y de texto. Los datos fueron examinados prev
 
    <img width="1024" height="1536" alt="Sensor de viaje de suspensión en detalle" src="https://github.com/user-attachments/assets/3ae5fb50-2cc8-43fb-9eed-ea9e75fc81ed" />
    <img width="1024" height="1365" alt="Detalle del Opel Corsa rally" src="https://github.com/user-attachments/assets/7ce246ab-9884-4d23-ba34-5ef7547cf99f" />
-------------------------------------------------------------------------------------------
 
-
+-----------------------------------------------------------------------------------------------------------------------------
 
 ### 2) EXPLORACIÓN DE DATOS
    
