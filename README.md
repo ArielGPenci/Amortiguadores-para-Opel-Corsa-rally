@@ -1,7 +1,8 @@
 # Amortiguadores para Opel Corsa rally
-Análisis de datos obtenidos por medio de sensores, para conocer el estado de los cuatro amortiguadores de un vehículo de competición.
+## Análisis de datos obtenidos por medio de sensores, para conocer el estado de los cuatro amortiguadores de un vehículo de competición.
 
-Sobre el análisis
+
+### Sobre el análisis
 El vehículo en cuestión es un Opel Corsa super 1600, del año 2005. El dataset se obtuvo luego de que los sensores en el auto registraran un tramo corto, de ripio con leves saltos y lomas.
 El dataset es un archivo .xlsx que consta de 10.000 registros y 10 variables. Estas son:
 1) Duración de la medición (timestamp_ms)
@@ -15,7 +16,7 @@ El dataset es un archivo .xlsx que consta de 10.000 registros y 10 variables. Es
 9) Velocidad del vástago del amortiguador trasero derecho(vel_amo_tras_der)
 10) Momento del amortiguador (accion_amortiguador)*
     
-*Si es positivo, está en la fase de compresión, si es negativo de rebote.
+**Si es positivo, está en la fase de compresión, si es negativo de rebote.*
 
 A modo de convención, se asume que los lados derecho e izquierdo son los siguientes:
 
@@ -33,14 +34,17 @@ D) Conclusiones.
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
-1) LECTURA DEL DATASET
+### 1) LECTURA DEL DATASET
    
 El mismo combina valores numéricos y de texto. Los datos fueron examinados previamente, para asegurar su integridad. No se encontron datos faltantes ni erróneos. Los datos se obtuvieron por medio de sensores especiales conectados en cada rueda:
 
    <img width="1024" height="1536" alt="Sensor de viaje de suspensión en detalle" src="https://github.com/user-attachments/assets/3ae5fb50-2cc8-43fb-9eed-ea9e75fc81ed" />
    <img width="1024" height="1365" alt="Detalle del Opel Corsa rally" src="https://github.com/user-attachments/assets/7ce246ab-9884-4d23-ba34-5ef7547cf99f" />
+------------------------------------------------------------------------------------------
 
-2) EXPLORACIÓN DE DATOS
+
+
+### 2) EXPLORACIÓN DE DATOS
    
 Para tener una primera aproxomación a los datos, se ejecutaron algunos comandos de R:
 
@@ -52,9 +56,11 @@ Para tener una primera aproxomación a los datos, se ejecutaron algunos comandos
 
 . is.na
 
-3) ANÁLISIS
+------------------------------------------------------------------------------------------
 
-A) Velocidades de compresión y rebote de cada amortiguador
+### 3) ANÁLISIS
+
+**A) Velocidades de compresión y rebote de cada amortiguador**
 
 Aunque la suspensión se mueve apenas unos milímetros, lo hace con mucha energía y rapidez. Se mide en metros por segundo (m/s). Los siguentes histogramas muestran el desempeño de los cuatro amortiguadores del vehículo, en la fase de compresión (velocidad positiva, ya que el amortiguador "sube"):
 
@@ -79,9 +85,9 @@ A continuación, las velocidades de rebote (velocidad negativa, el amortiguador 
 
 Los cuatro amortiguadores tienen una velocidad de compresión y rebote relativamente bajsa. Esto quiere decir que los vástagos de los amortiguadores se mueven poco, por lo que los cuatro muelles de suspensión están bastante rígidos.
 
----------------------
+-------------------------------------------------------------------------------------------------------------------------------------
 
-B) Visualización de valores maximos y mínimos de compresión. Rebote.
+**B) Visualización de valores maximos y mínimos de compresión. Rebote.**
 
 Los vástagos de los 4 amortiguadores poseen un recorrido de 200 milímetros. Así, se considera una comoresión como máxima cuando el valor oscila entre los 115 y 200 mm. Al margen de saber cuantas veces llega a valores máximos de compresión, es interesante saber qué porcentaje del tiempo los amortiguadores estuvieron "sufriendo" en compresiones elevadas. La siguiente tabla muestra la proporción del tiempo en que los amortiguadores llegan (o casi) al máximo:
 
@@ -93,7 +99,7 @@ Por otro lado, se considera valores maximos de de rebote los comprendidos entre 
 
 ----------------------------------------
 
-C) Transferencia de cargas: alancelo lateral y balanceo longitudinal.
+**C) Transferencia de cargas: alancelo lateral y balanceo longitudinal.**
 
 El balanceo lateral ocurre principalmente en las curvas. La fuerza centrífuga hace que el peso se desplace hacia las ruedas exteriores. Es decir, qué tanto se "acuesta" el chasis sobre las suspensiones exteriores al doblar.
 A continuación se muestran los valores máximos para los amortiguadores drechos e izquierdos:
@@ -110,7 +116,7 @@ En este caso, la diferencia es de 8mm: el eje delantero tiende a mantenerse mas 
 
 --------------------------------------------------
 
-D) Conclusiones.
+**D) Conclusiones.**
 
 A partir del análisis realizado, se desprenden las siguientes observaciones:
 
