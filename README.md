@@ -20,7 +20,7 @@ El dataset es un archivo .xlsx que consta de 10.000 registros y 10 variables. Es
 
 A modo de convención, se asume que los lados derecho e izquierdo son los siguientes:
 
-    
+<p align="right">    
 <img width="1536" height="1024" alt="Vista superior del auto de rally" src="https://github.com/user-attachments/assets/a00f1a98-f436-4f0d-a11e-1f8000214f09" />
 
 El análisis, hecho totalmente en R (Rstudio), consta de cuatro momentos:
@@ -32,14 +32,16 @@ B) Visualización de valores maximos y mínimos tanto de compresión como de reb
 C) Transferencia de cargas: balanceo longitudinal y balancelo lateral.
 D) Conclusiones.
 
--------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 1) LECTURA DEL DATASET
    
 El mismo combina valores numéricos y de texto. Los datos fueron examinados previamente, para asegurar su integridad. No se encontron datos faltantes ni erróneos. Los datos se obtuvieron por medio de sensores especiales conectados en cada rueda:
 
-   <img width="1024" height="1536" alt="Sensor de viaje de suspensión en detalle" src="https://github.com/user-attachments/assets/3ae5fb50-2cc8-43fb-9eed-ea9e75fc81ed" />
-   <img width="1024" height="1365" alt="Detalle del Opel Corsa rally" src="https://github.com/user-attachments/assets/7ce246ab-9884-4d23-ba34-5ef7547cf99f" />
+ <p align="center">
+      <img width="1024" height="1536" alt="Sensor de viaje de suspensión en detalle" src="https://github.com/user-attachments/assets/3ae5fb50-2cc8-43fb-9eed-ea9e75fc81ed" />
+<p align="center">
+    <img width="1024" height="1365" alt="Detalle del Opel Corsa rally" src="https://github.com/user-attachments/assets/7ce246ab-9884-4d23-ba34-5ef7547cf99f" />
 
 -----------------------------------------------------------------------------------------------------------------------------
 
@@ -63,23 +65,25 @@ Para tener una primera aproxomación a los datos, se ejecutaron algunos comandos
 
 Aunque la suspensión se mueve apenas unos milímetros, lo hace con mucha energía y rapidez. Se mide en metros por segundo (m/s). Los siguentes histogramas muestran el desempeño de los cuatro amortiguadores del vehículo, en la fase de compresión (velocidad positiva, ya que el amortiguador "sube"):
 
+<p align="center">
 <img width="723" height="439" alt="image" src="https://github.com/user-attachments/assets/664788f1-4344-48f4-9cea-62fccd7b135e" />
-
+<p align="center">
 <img width="723" height="439" alt="image" src="https://github.com/user-attachments/assets/81838ccf-1724-4d35-9445-34f79c696b35" />
-
+<p align="center">
 <img width="723" height="439" alt="image" src="https://github.com/user-attachments/assets/735e2799-d65f-4b45-9c52-24bcdf17a229" />
-
+<p align="center">
 <img width="723" height="439" alt="image" src="https://github.com/user-attachments/assets/a5b39d86-f622-4023-a953-ac248760d9b0" />
 
 
 A continuación, las velocidades de rebote (velocidad negativa, el amortiguador "baja):
 
+<p align="center">
 <img width="723" height="439" alt="image" src="https://github.com/user-attachments/assets/bb45e255-64c7-4b39-9632-37975f53d23f" />
-
+<p align="center">
 <img width="723" height="439" alt="image" src="https://github.com/user-attachments/assets/c9417693-66d7-47d2-9183-6f3986136670" />
-
+<p align="center">
 <img width="723" height="439" alt="image" src="https://github.com/user-attachments/assets/2a89d265-d883-4079-a8cd-afad4da725fc" />
-
+<p align="center">
 <img width="723" height="439" alt="image" src="https://github.com/user-attachments/assets/988028eb-1bb5-410a-9207-c2ef5fdba815" />
 
 Los cuatro amortiguadores tienen una velocidad de compresión y rebote relativamente bajsa. Esto quiere decir que los vástagos de los amortiguadores se mueven poco, por lo que los cuatro muelles de suspensión están bastante rígidos.
@@ -90,6 +94,7 @@ Los cuatro amortiguadores tienen una velocidad de compresión y rebote relativam
 
 Los vástagos de los 4 amortiguadores poseen un recorrido de 200 milímetros. Así, se considera una comoresión como máxima cuando el valor oscila entre los 115 y 200 mm. Al margen de saber cuantas veces llega a valores máximos de compresión, es interesante saber qué porcentaje del tiempo los amortiguadores estuvieron "sufriendo" en compresiones elevadas. La siguiente tabla muestra la proporción del tiempo en que los amortiguadores llegan (o casi) al máximo:
 
+<p align="center">
 <img width="498" height="298" alt="image" src="https://github.com/user-attachments/assets/1b787056-b5a5-4d47-8945-168c589496e3" />
 
 
@@ -102,6 +107,8 @@ Por otro lado, se considera valores maximos de de rebote los comprendidos entre 
 
 El balanceo lateral ocurre principalmente en las curvas. La fuerza centrífuga hace que el peso se desplace hacia las ruedas exteriores. Es decir, qué tanto se "acuesta" el chasis sobre las suspensiones exteriores al doblar.
 A continuación se muestran los valores máximos para los amortiguadores drechos e izquierdos:
+
+<p align="center">
 <img width="498" height="133" alt="image" src="https://github.com/user-attachments/assets/4cf2707f-aa84-4463-a021-4ea8f210eb54" />
 
 La diferencia es de 1,3 mm, lo que indica que no existe un balanceo mayor de un lado que del otro (amortiguadores en buen estado y/o bien regulados).
@@ -109,6 +116,7 @@ La diferencia es de 1,3 mm, lo que indica que no existe un balanceo mayor de un 
 Por otro lado, el balanceo longitudinal sucede al acelerar o al frenar. En aceleración, el eje delantero tiende a subir y el trasero a bajar. En frenadas, al revés.
 En la siguente tabla se muestran las pociciones máximas de los amortiguadores del eje delantero y trasero:
 
+<p align="center">
 <img width="318" height="135" alt="image" src="https://github.com/user-attachments/assets/ceb40c04-e1fb-4d59-8530-2ab1a519d144" />
 
 En este caso, la diferencia es de 8mm: el eje delantero tiende a mantenerse mas bajo que el trasero. Esto quiere decir que al frenar, el eje delantero demandará mas potencia de frenado. Pero como el centtro de gravedad está volcado hacia adelante las ruedas motrices del tendrán  mejor contacto con el suelo al arrancar o salir de curvas lentas (reduciendo el patinamiento).
