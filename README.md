@@ -29,6 +29,7 @@ El análisis, hecho totalmente en R (Rstudio), consta de cuatro momentos:
 A) Velocidades de compresión y rebote de cada amortiguador.
 B) Visualización de valores maximos y mínimos tanto de compresión como de rebote.
 C) Transferencia de cargas: balanceo longitudinal y balancelo lateral.
+D) Conclusiones.
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -106,6 +107,26 @@ En la siguente tabla se muestran las pociciones máximas de los amortiguadores d
 <img width="318" height="135" alt="image" src="https://github.com/user-attachments/assets/ceb40c04-e1fb-4d59-8530-2ab1a519d144" />
 
 En este caso, la diferencia es de 8mm: el eje delantero tiende a mantenerse mas bajo que el trasero. Esto quiere decir que al frenar, el eje delantero demandará mas potencia de frenado. Pero como el centtro de gravedad está volcado hacia adelante las ruedas motrices del tendrán  mejor contacto con el suelo al arrancar o salir de curvas lentas (reduciendo el patinamiento).
+
+--------------------------------------------------
+
+D) Conclusiones.
+
+A partir del análisis realizado, se desprenden las siguientes observaciones:
+
+1) Balanceo longitudinal positivo: Existe una diferencia constante de 8 mm (eje delantero más bajo). Esto define un setup de "ataque". En un auto de tracción delantera como el Corsa, esto favorece la entrada en curvas cerradas al cargar más peso estático en el tren direccional. Sin embargo, los datos sugieren que esto deja al eje delantero con menos recorrido de compresión disponible para absorber impactos.
+
+2) Balanceo lateral: La diferencia de apenas 1 mm entre el lado izquierdo y derecho indica un balanceo estático excelente. El peso del vehículo está correctamente balanceado, lo que garantiza que el auto reaccione de forma predecible tanto en curvas a la izquierda como a la derecha.
+
+3) Capacidad de absorción de los amoritiguadores - valores de tope:
+El hecho de que los amortiguadores traseros pasen un 44% del tiempo en valores cercanos a la compresión máxima (comparado con el ~33% de los delanteros) indica que el eje trasero está sufriendo el impacto de las irregularidades de manera mucho más directa.
+Pasar casi la mitad del tiempo en el límite de compresión sugiere que los resortes traseros podrían ser demasiado blandos o que la altura trasera no es suficiente para la magnitud de los saltos del tramo analizado.
+
+4) Eficiencia hidráulica de los amortiguadores (velocidades de los vástagos): 
+El auto tiene un control de carrocería estable, ya que destacan las velocidad bajas de los vástagos durante el tramo de prueba.
+Los histogramas amarillos (delanteros) muestran colas más largas que los grises (traseros), significa que el eje delantero está gestionando impactos mucho más violentos, probablemente por ser el primero en recibir el contacto tras un salto.
+
+5) Recomendaciones: Ajuste de muelles de suspensón traseros. Evaluar el incremento de la constante elástica (K) en el eje trasero para reducir ese 44% de tiempo en compresión máxima, protegiendo la integridad del chasis.
 
 
 
